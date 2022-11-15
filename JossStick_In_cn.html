@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Littlechrys Agarwood</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!--------- Navigation bar --------->
+    <nav>
+        <div id="home" class="logo">
+            <img src="logo.png" width="280" />
+        </div>
+
+        <div id="toggle"></div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="index.html" id="click">Home</a></li>
+                <li><a href="#about" id="click">About</a></li>
+                <li><a href="#service" id="click">Brands We Carry</a></li>
+                <li><a href="#contact" id="click">Product</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="bg-image"><a href="JossStick_In.html"><p class="language1">English</p></a> </div>
+    <!--------- Slogan --------->
+    <section class="content" id="content">
+        <h2>Joss Stick Incense</h2>
+
+    </section>
+    <br />
+    <!--------- About --------->
+    <section class="about" , id="about">
+        <h1 id="_about">Mangala 上等越南天然沉香塔</h1>
+        <p>
+            本地卖家，有库存，出货快捷！！ <br />
+
+            Mangala 在越南从事沉香业务已有40年的经验. Mangala沉香燃烧时会产生甜美而持久的香味. 可在瑜伽, 静坐冥想, 净化区域或日常祈祷使用.<br />
+           
+            型: 白，褐，金<br />
+            褐比白高级，金比褐高年级<br />
+            原料：天然上等沉香和天然粘粉<br />
+            数量: 25颗<br />
+            尺寸: 沉香底大约1 cm X高大约3 cm 到 4 cm<br />
+            燃烧时间：大约15分钟，看环境<br />
+            越南製造<br />
+            不使用时存放在干燥的地方<br />
+            不包括香炉<br />
+        </p>
+
+    </section>
+    <br />
+
+
+
+    <!--------- Java script for toggle --------->
+    <script>
+        const toggle = document.getElementById('toggle')
+        const sidebar = document.getElementById('sidebar')
+
+        document.onclick = function (e) {
+            if (e.target.id !== 'sidebar' && e.target.id !== 'toggle') {
+                toggle.classList.remove('active')
+                sidebar.classList.remove('active')
+            }
+        }
+        toggle.onclick = function () {
+            toggle.classList.toggle('active')
+            sidebar.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
